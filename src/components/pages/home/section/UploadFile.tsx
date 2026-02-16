@@ -1,6 +1,7 @@
 'use client';
 import { FC } from 'react';
 import scss from './UploadFile.module.scss';
+import { api } from '@/api';
 
 export const UploadFile: FC = () => {
 	return (
