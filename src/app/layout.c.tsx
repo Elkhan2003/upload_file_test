@@ -2,6 +2,7 @@
 import { FC, ReactNode } from 'react';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { ConfigProvider, theme } from 'antd';
+import { Toaster } from 'react-hot-toast';
 
 interface ILayoutClientProps {
 	children: ReactNode;
@@ -10,6 +11,7 @@ interface ILayoutClientProps {
 const LayoutClient: FC<ILayoutClientProps> = ({ children }) => {
 	return (
 		<>
+			<Toaster position="top-center" />
 			<AntdRegistry>
 				<ConfigProvider
 					theme={{
