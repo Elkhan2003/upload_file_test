@@ -40,7 +40,7 @@ export const UploadFile: FC = () => {
 			<div className="container">
 				<div className={scss.content}>
 					<Upload {...uploadProps}>
-						<Button icon={<ImageUp />}>Click to Upload</Button>
+						<Button icon={<ImageUp size={18} />}>Click to Upload</Button>
 					</Upload>
 				</div>
 			</div>
